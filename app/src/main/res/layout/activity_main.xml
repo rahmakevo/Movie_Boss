@@ -10,7 +10,18 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:contentDescription="image_background"
+        android:contentDescription="@string/image_background"
         android:src="@drawable/background" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:textSize="@dimen/text_hello_size"
+        android:text="@string/hello_world"
+        android:textColor="@color/colorPrimaryDark"/>
 
 </RelativeLayout>

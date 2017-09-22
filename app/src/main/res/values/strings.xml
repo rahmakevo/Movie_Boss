@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Movie_Boss</string>
+    <string name="image_background">Background Image</string>
+    <string name="hello_world">Hello World From Movie Boss</string>
 </resources>
