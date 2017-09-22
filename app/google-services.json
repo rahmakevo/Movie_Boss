@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "15033658149",
+    "firebase_url": "https://movie-boss-b480b.firebaseio.com",
+    "project_id": "movie-boss-b480b",
+    "storage_bucket": "movie-boss-b480b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:15033658149:android:700b2be9c8f3eead",
+        "android_client_info": {
+          "package_name": "com.example.rahmak.movie_boss"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "15033658149-64tfhmv9ikvafdpu7p9t296gshuss9rg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.rahmak.movie_boss",
+            "certificate_hash": "13f8c5b08475dd0de345ba17cf72d4bcde454bb8"
+          }
+        },
+        {
+          "client_id": "15033658149-p264mhjkf0efag8crfn507l2hrls48h1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9Na4bJGiPoCs0DaHse_Bgi-SGpdU36pM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "15033658149-p264mhjkf0efag8crfn507l2hrls48h1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

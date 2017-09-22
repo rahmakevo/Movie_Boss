@@ -2,4 +2,12 @@
     <string name="app_name">Movie_Boss</string>
     <string name="image_background">Background Image</string>
     <string name="hello_world">Hello World From Movie Boss</string>
+    <string name="menu_favorites">Favorite Movies</string>
+    <string name="wealthy_actors">Wealthiest Actors</string>
+    <string name="action_settings">Settings</string>
+    <string name="text_enter_zip">Enter Zip Code</string>
+    <string name="button_enter">Enter</string>
+    <string name="image_movie">Movie Image</string>
+    <string name="title">Title</string>
+    <string name="rating">Rating</string>
 </resources>
