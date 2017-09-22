@@ -10,5 +10,6 @@ public class Constants {
     public static final String API_READ_ACCESS_TOKEN = BuildConfig.API_READ_ACCESS_TOKEN;
     public static final String API_REQUEST_URL = BuildConfig.API_REQUEST_URL;
     public static final String API_MOVIENAME_QUERY_PARAMETER = "name";
+    public static final String FIREBASE_CHILD_SEARCHED_LOCATION = "searchedLocation";
 
 }

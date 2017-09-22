@@ -10,11 +10,17 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 
 public class MainActivity extends AppCompatActivity {
 
     EditText editText;
     Button button;
+
+    private DatabaseReference databaseReference;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +29,8 @@ public class MainActivity extends AppCompatActivity {
 
         editText = (EditText) findViewById(R.id.editText);
         button = (Button) findViewById(R.id.button);
+
+        databaseReference = FirebaseDatabase.getInstance().getReference().child(Constants.FIREBASE_CHILD_SEARCHED_LOCATION);
     }
 
     @Override
@@ -43,6 +51,9 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             case R.id.settings:
                 settings(menuItem);
+                return true;
+            case R.id.logout:
+                logout(menuItem);
                 return true;
             default:
                 return super.onOptionsItemSelected(menuItem);
@@ -66,8 +77,18 @@ public class MainActivity extends AppCompatActivity {
 
     public void button_enter(View view) {
         String name = editText.getText().toString();
+        saveLocationToFirebase(name);
         Intent intent = new Intent(this, Movies.class);
-        intent.putExtra("name", name);
+        startActivity(intent);
+    }
+
+    public void saveLocationToFirebase(String name){
+        databaseReference.push().setValue(name);
+    }
+
+    public void logout(MenuItem item) {
+        FirebaseAuth.getInstance().signOut();
+        Intent intent = new Intent(MainActivity.this, Login.class);
         startActivity(intent);
     }
 }
